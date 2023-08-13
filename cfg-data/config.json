@@ -1,0 +1,15 @@
+{
+	"CPSTACK_SERVER":"192.168.0.115",
+	"CPSTACK_PORT":8080,
+	"CPSTACK_TENANT_ID" : "faa76fe8-7d19-455b-a691-b7b9b23883bb",
+	"CPSTACK_API_KEY":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjaGlycHN0YWNrIiwiaXNzIjoiY2hpcnBzdGFjayIsInN1YiI6Ijc1YzgwOTYyLTA2MDktNDJhMC1hNTFkLTMxNWQwZGUxYzM2MyIsInR5cCI6ImtleSJ9.Nbyj-x05VfyRtRqi5rdzpCs4n9S5df0sQVzaqLZ27UA",
+	"MQTT_SERVER":"192.168.0.115",
+	"MQTT_PORT":9883,
+	"MQTT_USER":"chirpstack",
+	"MQTT_PASSWORD":"chirpstack",
+	"MQTT_CLIENT_ID" : "chirpstack-connector",
+	"MQTT_METADATA_TOPIC":"ie/m/j/simatic/v1/chirpstack/dp",
+	"MQTT_STATUS_TOPIC" : "ie/s/j/simatic/v1/chirpstack/status",
+    "MQTT_DATA_WRITE_TOPIC" : "ie/d/j/simatic/v1/chirpstack/dp/w",
+    "MQTT_DATA_READ_TOPIC" : "ie/d/j/simatic/v1/chirpstack/dp/r"
+}

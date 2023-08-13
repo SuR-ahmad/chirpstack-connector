@@ -1,0 +1,23 @@
+# Copyright 2022 Thetaphi Ltd.
+
+version: "2.4"
+
+# Services
+services:
+    chirpstack-connector:
+        image: chirpstack-connector:1.1.0
+        build:
+            context: ./src
+        mem_limit: 100mb
+        restart: unless-stopped
+        volumes:
+            - './cfg-data/:/cfg-data/'
+        networks:
+            - chirpstack-net
+
+networks:
+    # custom bridge network. Used to communicate with the Lora Server API - allows resolution of hostname connected to the network (.e.g. chirpstack, mosquitto)
+    # makesure it is defined in the docker daemon or through another container thats running  and is used in the chirpstack docker compose file
+    chirpstack-net:
+        external: true
+        name: chirpstack-net

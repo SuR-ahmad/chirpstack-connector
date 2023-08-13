@@ -1,0 +1,6 @@
+\logs\*.*
+\localfiles
+\venv
+\src\__pycache__
+docker-compose-iem.yml
+config-iem.json
